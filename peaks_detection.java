@@ -8,7 +8,8 @@ import smile.timeseries;
 
 
 /**
- * Peaks Detection !
+ * Peaks Detection!
+ * https://github.com/b-elamine
  */
 public class peaks_detection{
 
@@ -55,7 +56,7 @@ public class peaks_detection{
             System.exit(0);
         }
 
-        min = Float.POSITIVE_INFINITY;
+        min = Float.POSITIVE_INFINITY; 
         max = Float.NEGATIVE_INFINITY;
         minPos = Float.NaN;
         maxPos = Float.NaN;
@@ -89,8 +90,14 @@ public class peaks_detection{
                 }
             }
         }
+        
+        /**
+            * Here i'm returning just the maxPeaks (the ones i need for my work)
+            * you can just change maxPeaks by minPeaks if you need the minimum 
+            * you can also change the return type of the function and return both maxPeaks and minPeaks  
+        */
 
-        return minPeaks;
+        return maxPeaks;
     }
 
 }
